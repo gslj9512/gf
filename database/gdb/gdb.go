@@ -512,7 +512,7 @@ var (
 
 	// regularFieldNameRegPattern is the regular expression pattern for a string
 	// which is a regular field name of table.
-	regularFieldNameRegPattern = `^[\w\.\-]+$`
+	regularFieldNameRegPattern = `*^[\w\p{Han}\.\-]+$`
 
 	// regularFieldNameWithCommaRegPattern is the regular expression pattern for one or more strings
 	// which are regular field names of table, multiple field names joined with char ','.
